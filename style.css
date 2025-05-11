@@ -54,7 +54,7 @@ a:visited {
     font-family:'Twin Marker';
     color:white;
     flex:1;
-    font-size:18px;
+    font-size:18px; 
 }
 
 .main-content {
