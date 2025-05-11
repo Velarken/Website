@@ -1,26 +1,45 @@
 @font-face {
     font-family: 'Twin Marker';
     src: url('fonts/TwinMarker.woff2') format('woff2'),
-        url('TwinMarker.woff') format('woff');
+        url('fonts/TwinMarker.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'MODERNIZ';
+    src: url('fonts/MODERNIZ.woff2') format('woff2'),
+        url('fonts/MODERNIZ.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Unageo';
+    src: url('fonts/Unageo-Regular.woff2') format('woff2'),
+        url('fonts/Unageo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
-    --white: rgb(255, 255, 255);
+    --mainText: rgb(255, 255, 255);
 }
 body {
+    color: var(--mainText);
+    font-family: 'Unageo';
     display:flex;
     flex-direction:column;
     background-color: black;
 }
-#white-text {
-    color: var(--white);
-}
 li {
+    display:flex;
     padding:20px;
     flex:1;
     border: 1px dotted pink;
+    align-items: center;
+    justify-content: center;
 }
 ul {
     border:1px dotted yellow;
@@ -35,9 +54,19 @@ a:visited {
     text-decoration: none;
 }
 
+
 .nav {
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    border:1px solid rgb(124, 24, 124);
+}
+#nav-box {
+    display:flex;
     flex-direction:row;
+    width:100vw;
     height:15vh;
     align-items: center;
     justify-content: center;
@@ -46,26 +75,31 @@ a:visited {
 }
 #logo-box{
     min-width:33vw;
+    min-height:10vh;
+    border:1px solid blue;
 }
 #nav-Link {
     display:flex;
     flex-direction:row;
     list-style:none;
-    font-family:'Twin Marker';
+    font-family:'MODERNIZ';
     color:white;
     flex:1;
-    font-size:18px; 
+    font-size:16px; 
 }
 
 .main-content {
     display: block;
     margin:15px;
+    border:1px solid darkseagreen;
 }
 .photo-block {
     display:flex;
     flex-direction: column;
     height:60vh;
     align-items: center;
+    border:1px solid blue;
+    
 }
 .photo {
     position:relative;
